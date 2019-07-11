@@ -19,8 +19,8 @@ var download =
 {
   name: 'linux',
   url: LINUX_URL,
-  sha256: LINUX_SHA256,
-  patch:
+	sha256: LINUX_SHA256,
+	patch:
   [
     {
       url: LINUX_CJKTTY_PATCH,
@@ -31,10 +31,10 @@ var download =
       strip: 1
     },
     {
-      url: 'patches/logo.patch',
+      url: 'patches/sin.patch',
       strip: 1
     }
-  ]
+]
 }
 
 if(process.platform === 'darwin')
